@@ -1,0 +1,19 @@
+{
+  "name": "freelance-marketplace",
+  "version": "1.0.0",
+  "description": "Professional freelance marketplace website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": ["freelance", "marketplace", "nextjs", "nodejs", "mongodb"],
+  "author": "Freelance Marketplace",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
