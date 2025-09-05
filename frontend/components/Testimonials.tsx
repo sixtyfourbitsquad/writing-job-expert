@@ -45,7 +45,7 @@ const Testimonials = () => {
             What Our Users Say
           </h2>
           <p className="text-xl text-dark-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our community has to say.
+            Don&apos;t just take our word for it. Here&apos;s what our community has to say.
           </p>
         </motion.div>
 
@@ -68,7 +68,7 @@ const Testimonials = () => {
               </div>
 
               <p className="text-dark-600 mb-6 leading-relaxed">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
 
               <div className="flex items-center">

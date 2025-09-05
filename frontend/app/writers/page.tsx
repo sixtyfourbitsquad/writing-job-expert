@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Search, Filter, MapPin, Star, Eye, Award, Clock } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -257,9 +258,11 @@ const Writers = () => {
                 <Card className="h-full hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-start space-x-4 mb-4">
                     <div className="relative">
-                      <img
+                      <Image
                         src={writer.avatar}
                         alt={writer.name}
+                        width={64}
+                        height={64}
                         className="w-16 h-16 rounded-full object-cover"
                       />
                       {writer.isVerified && (

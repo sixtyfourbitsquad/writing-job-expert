@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
+import Image from 'next/image'
 import { Search, Filter, Star, Clock, User, Tag, Calendar } from 'lucide-react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -309,9 +310,11 @@ const Services = () => {
                 <Card className="h-full hover:shadow-2xl transition-all duration-300">
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex items-center space-x-3">
-                      <img
+                      <Image
                         src={service.providerAvatar}
                         alt={service.provider}
+                        width={40}
+                        height={40}
                         className="w-10 h-10 rounded-full object-cover"
                       />
                       <div>

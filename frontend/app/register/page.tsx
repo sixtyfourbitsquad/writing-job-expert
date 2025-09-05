@@ -209,7 +209,7 @@ const Register = () => {
               Join Writing Job Expert
             </h1>
             <p className="text-xl text-secondary-600 max-w-3xl mx-auto">
-              Choose how you'd like to join our writing marketplace
+              Choose how you&apos;d like to join our writing marketplace
             </p>
           </motion.div>
 

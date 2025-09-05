@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { useParams, useRouter } from 'next/navigation'
+import Image from 'next/image'
 import { 
   CreditCard, 
   QrCode, 
@@ -128,7 +129,7 @@ const PaymentPage = () => {
           <div className="text-center">
             <AlertCircle className="w-16 h-16 text-red-500 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-secondary-900 mb-2">Payment Not Found</h2>
-            <p className="text-secondary-600 mb-4">The payment you're looking for doesn't exist.</p>
+            <p className="text-secondary-600 mb-4">The payment you&apos;re looking for doesn&apos;t exist.</p>
             <Button onClick={() => router.push('/')}>
               <ArrowLeft className="w-4 h-4 mr-2" />
               Go Home
@@ -251,9 +252,11 @@ const PaymentPage = () => {
                     {/* QR Code */}
                     <div className="text-center mb-6">
                       <div className="bg-white p-4 rounded-lg shadow-sm border-2 border-dashed border-soft-300 mb-4">
-                        <img
+                        <Image
                           src={payment.qrCodeUrl}
                           alt="UPI QR Code"
+                          width={192}
+                          height={192}
                           className="w-48 h-48 mx-auto"
                         />
                       </div>
@@ -380,7 +383,7 @@ const PaymentPage = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-secondary-600">
                 <div>
                   <h4 className="font-medium text-secondary-900 mb-2">Payment Issues:</h4>
-                  <p>If you're having trouble with payment, please contact our support team at support@writingjobexpert.com</p>
+                  <p>If you&apos;re having trouble with payment, please contact our support team at support@writingjobexpert.com</p>
                 </div>
                 <div>
                   <h4 className="font-medium text-secondary-900 mb-2">UTR Number:</h4>
